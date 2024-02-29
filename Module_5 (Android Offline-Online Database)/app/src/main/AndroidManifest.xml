@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidOffline_OnlineDatabase"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".que_5.PhotoAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_3.Activity.AddTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_1.Activity.TodoAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_2.Activity.NoteAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_4.Activity.EmployeeSplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_3.Activity.TaskManageMentSplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_2.Activity.StickyNoteSplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_1.Activity.ToDoSplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_4.Activity.ProjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_4.Activity.ProjectListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_4.Activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_4.Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_3.Activity.TaskManagementAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_2.Activity.StickyNoteAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".que_1.Activity.ToDoAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
